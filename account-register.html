@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <!-- Meta tag -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="alvians">
+
+        <!-- Page information -->
+        <title>SinauBareng | Buat Akun Baru dan Nikmati Fitur</title>
+
+        <!-- Stylesheet links -->
+        <link rel="stylesheet" type="text/css" href="./style/account-registration.css">
+    </head>
+    <body>
+        <form class="form-signup">
+            <div class="site-logo-container">
+                <a href="index.html" class="site-logo-link">
+                    <img src="./images/site-logo.png" alt="Logo Website SinauBareng" class="site-logo-img">
+                </a>
+            </div>
+            <input type="text" id="signup-username" placeholder="Nama Lengkap">
+            <input type="text" id="signup-nickname" placeholder="Nama Panggilan">
+            <input type="text" id="signup-number" placeholder="Nomor Telpon (bisa WA)">
+            <input type="text" id="signup-email" placeholder="Email">
+            <input type="password" id="signup-password" placeholder="Kata Sandi">
+            <p class="signup-gender-label"><strong>Tanggal Lahir:</strong></p>
+            <input type="date" id="signup-birthdate">
+            <p class="signup-gender-label"><strong>Pilih Satu:</strong></p>
+            <div class="form-signup-gender-container">
+                <div class="signup-gender-container-male">
+                    <label for="signup-gender-male">Laki-laki</label>
+                    <input type="radio" id="signup-gender-male" name="gender" value="male">
+                </div>
+                <div class="signup-gender-container-female">
+                    <label for="signup-gender-female">Perempuan</label>
+                    <input type="radio" id="signup-gender-female" name="gender" value="female">
+                </div>
+                <div class="signup-gender-container-secret">
+                    <label for="signup-gender-secret">Rahasia</label>
+                    <input type="radio" id="signup-gender-secret" name="gender" value="secret">
+                </div>
+            </div>
+            <div class="signup-btn-container">
+                <p class="goto-signin-paragraph">
+                    <a href="account-signin.html" class="goto-signin-link"><strong>Log In</strong></a>
+                    jika sudah punya akun.
+                </p>
+                <input type="submit" value="Daftar">
+            </div>
+        </form>
+    </body>
+</html>
